@@ -16,16 +16,22 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 1s ease-in-out;
 }
 
-#app.light {
+main.light {
   background-color: aliceblue;
 }
 
-#app.dark {
+main.dark {
   background-color: black;
 }
 
@@ -33,6 +39,8 @@ button {
   font-size: 3rem;
   padding: 1rem 1.5rem;
   border: 4px solid;
+  transition: background-color 1s ease-in-out, color 1s ease-in-out,
+    border-color 1s ease-in-out;
 }
 
 .light button {

@@ -20,3 +20,31 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+#app.light {
+  background-color: aliceblue;
+}
+
+#app.dark {
+  background-color: black;
+}
+
+button {
+  font-size: 3rem;
+  padding: 1rem 1.5rem;
+  border: 4px solid;
+}
+
+.light button {
+  background-color: transparent;
+  color: black;
+  border-color: black;
+  box-shadow: 3px 3px 15px inset rgba(0, 0, 0, 0.15);
+}
+
+.dark button {
+  background-color: black;
+  color: aliceblue;
+  border-color: aliceblue;
+  box-shadow: 0 0 50px aliceblue;
+}

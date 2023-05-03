@@ -10,8 +10,10 @@
 </head>
 
 <body>
-    <div id="app" class="light">
-        <button>Licht Aus</button>
+    <div id="app">
+        <main :class="currentStyle">
+            <button @click="changeState">{{ currentButtonText }}</button>
+        </main>
     </div>
     <script src="vue.js"></script>
     <script src="script.js"></script>
